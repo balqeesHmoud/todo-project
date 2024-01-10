@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="./aboutStyle.css">
 </head>
-<body>
+
+<body class="body">
     <header>
-        <nav><ul>
-            <li><h1>ToDo</h1></li></nav>
-            <li><img src="./images/indix-logo.png" height="50" width="50" alt="logo"></li>
-            
-        </ul>
+        <div class="nav">
+            <nav class="nav">
+                <ul>
+                    <img class="logo" src="./images/indix-logo.png" alt="logo">
+                    <a class="homenav" href="./index.html">Home</a>
+                    <a class="aboutnav" href="./about.html">AboutUs</a>
+                </ul>
+        </div>
+        
     </header>
-    <main>
-        <h2>My information</h2>
-        <img src="./images/My-photo.jpg" height="300" width="150" alt="my photo">
-        <p>My name is balqees hmoud I am 22 years old </p><b>
-       </b><p>graduated with cyber security major.</p>
-       <br><br><br>
-       <h2>User informatiom</h2>
-       <label for="name">name</label>
-       <input type="text">
-       <label for="email">email</label>
-       <input type="text">
-       <label for="message">message</label>
-       <input type="text">
-       <input type="submit">
+    <div >
+    <main class="main" >
+        <h1 class="myName">Balqees Hmoud</h1>
+
+        <img class="myPhoto" src="./images/My-photo.jpg"  alt="my photo">
+        
+        <p class="overview">My name is balqees hmoud I am 22 years old graduated with cyber security major.</p>
+       
+       
+        <div class="childFbody">
+
+
+        <div class="contactMe">
+        <h2>Contact Me</h2>
+        <input type="text">
+        <label class="data" for="name">name</label>
+        <br>
+        <input type="text">
+
+        <label class="data" for="phon">phon </label>
+        <br>
+        <input type="text">
+        <label class="data" for="email">email</label>
+        <br>
+
+
+        
+        <input class="massegein" type="text">
+        <label class="data" for="message">message</label>
+        <input class="submit" type="submit">
+        </div>
+
+
+        </div>
+
+
+    </div>
+
     </main>
-    <br><br><br><br><br>
+    
     <footer>
+        <div class="footerbar">
         <p>ToDo powered by prep-student cours.</p>
+    </div>
     </footer>
 </body>
+
 </html>
