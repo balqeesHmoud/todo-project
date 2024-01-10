@@ -1,55 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo</title>
-    
+    <title>ToDo List</title>
+
+    <link rel="stylesheet" href="./indexStyle.css">
+
 </head>
 
 <body>
-    <header> 
-        
-        <nav><ul>
-            <li><h1>ToDo</h1></li>
-            <li><img src="./images/indix-logo.png" height="50" width="50" alt="logo"></li>
-            <li><a href="./about.html">ABOUT</a></li>
-        </ul>
+    <header>
+        <div class="nav">
+            <nav class="nav">
+                <ul>
+                    <img class="logo" src="./images/indix-logo.png" alt="logo">
+                    <a class="homenav" href="./index.html">Home</a>
+                    <a class="aboutnav" href="./about.html">AboutUs</a>
+                </ul>
+        </div>
 
         </nav>
     </header>
     <br><br><br><br><br><br>
     <main>
-        <table border="1">
+        <h1 class="title">ToDo List</h1>
+        <div >
+
+        <table align="center"  border="1">
             <tr>
-                <th>Tasks</th>
-                <th>Status</th>
-                
+                <th class="tablechip">Tasks</th>
+                <th class="tablechip">Status</th>
+
             </tr>
             <tr>
 
-            <td>task-1</td>
-            <td><input type="checkbox"></td>
-           
-            
+                <td class="tablechip">task-1 <input type="checkbox"></td>
+                <td class="parents">
+                    <div class="green"></div>
+                </td>
+
             </tr>
+            <div>
 
             <tr>
-                <td>task-2</td>
-                <td><input type="checkbox"></td>
-                
+                <td class="tablechip">task-2 <input type="checkbox"></td>
+                <td class="parents">
+                    <div class="red"></div>
+                </td>
+
             </tr>
             <tr>
-                <td>task-3</td>
-                <td><input type="checkbox"></td>
-                
+                <td class="tablechip">task-3 <input type="checkbox"></td>
+                <td class="parents">
+                    <div class="red"></div>
+                </td>
+
             </tr>
+        </div>
+    </div>
         </table>
     </main>
-    <footer>
-        <br><br><br><br><br><br>
-
-
-        <P>ToDo powered by prep-student course.</P></footer>
+    <footer class="footer">
+      <P>ToDo powered by prep-student course.</P>
+    </footer>
 </body>
+
 </html>
