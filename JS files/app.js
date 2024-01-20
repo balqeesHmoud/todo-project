@@ -37,7 +37,7 @@ function welcomingMessage() {
 
 
 function drinkCoffeAnswer(drinkCoffe){
-     drinkCoffe = prompt("Do you drink coffee at morning?", "yes/no")
+      drinkCoffe = prompt("Do you drink coffee at morning?", "yes/no")
         if (drinkCoffe === null || drinkCoffe == "") {
             drinkCoffe = "invalid";
         }
@@ -69,13 +69,6 @@ function loveCatsAnswe(loveCats){
 
 
 }
-
-
-function userAnswar(){
-    
-    let userAnswar =  [enteredDrinkCoffeAnswer, enteredScienceFictionAnswe, enteredLoveCatsAnswe]; 
-    return console.log("user answer :"+userAnswar);
-}
 let enteredUserName = userName();
 let enteredUserGender = userGender();
 let enteredUserAge = userAge();
@@ -84,6 +77,21 @@ welcomingMessage()
 let enteredDrinkCoffeAnswer = drinkCoffeAnswer();
 let enteredScienceFictionAnswe = scienceFictionAnswe();
 let enteredLoveCatsAnswe = loveCatsAnswe();
+
+
+function userAnswar(){
+    
+      let userArr =  [enteredDrinkCoffeAnswer, enteredScienceFictionAnswe, enteredLoveCatsAnswe]; 
+      let userAnswar=[];
+    for(let i=0; i<userArr.length; i++){
+        userAnswar.push(userArr[i]);
+}
+return console.log("user answars: "+userAnswar);
+
+}
+
+
+
 
 userAnswar();
 
