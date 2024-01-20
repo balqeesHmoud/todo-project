@@ -1,23 +1,92 @@
-var userName=prompt("please enter your name","exampil:balqees")
-var userGender=prompt("please enter your gender","male or female")
-var userAge=prompt("please enter your age","exampil:25")
-if(userAge<=0){
-    alert("age is less than or equal to zero.")
+
+function userName() {
+     
+    return prompt("please enter your name", "exampil:balqees");
 }
-var welcoming=confirm("skip the welcoming message.")
-if(welcoming==true){
+function userGender() {
+    return prompt("please enter your gender", "male or female");
 
 }
-else{
-    if (userGender == "male"){
-        alert("Heloo Mr "+userName)
 
+function userAge() {
+    let userAge = prompt("please enter your age", "exampil:25")
+    if (userAge <= 0) {
+        alert("age is less than or equal to zero.")
     }
-   else if (userGender == "female"){
-    alert("Heloo Ms "+userName)
+    return userAge;
+}
 
-    }
-    else{
-        alert("Hello "+userName)
+
+
+function welcomingMessage() {
+    let welcoming = confirm("skip the welcoming message.")
+    if (welcoming==false) {
+         if (enteredUserGender == "male") {
+            alert("Heloo Mr " + enteredUserName)
+
+        }
+        else if (enteredUserGender == "female") {
+            alert("Heloo Ms " + enteredUserName)
+
+        }
+        else {
+            alert("Hello " + enteredUserName)
+        }
     }
 }
+
+
+function drinkCoffeAnswer(drinkCoffe){
+     drinkCoffe = prompt("Do you drink coffee at morning?", "yes/no")
+        if (drinkCoffe === null || drinkCoffe == "") {
+            drinkCoffe = "invalid";
+        }
+
+     
+    return drinkCoffe;
+}
+
+function scienceFictionAnswe(scienceFiction){
+     scienceFiction = prompt("Do you watching science fiction movies?", "yes/no")      
+            if (scienceFiction == null || scienceFiction == "") {
+                scienceFiction = "invalid";
+            
+             }
+        
+
+     
+    return scienceFiction;
+}
+
+
+function loveCatsAnswe(loveCats){
+     loveCats = prompt("Do you love cats?", "yes/no")
+        if (loveCats == null || loveCats == "") {
+     loveCats = "invalid";
+
+ }
+ return loveCats;
+
+
+}
+
+
+function userAnswar(){
+    
+    let userAnswar =  [enteredDrinkCoffeAnswer, enteredScienceFictionAnswe, enteredLoveCatsAnswe]; 
+    return console.log("user answer :"+userAnswar);
+}
+let enteredUserName = userName();
+let enteredUserGender = userGender();
+let enteredUserAge = userAge();
+welcomingMessage()
+
+let enteredDrinkCoffeAnswer = drinkCoffeAnswer();
+let enteredScienceFictionAnswe = scienceFictionAnswe();
+let enteredLoveCatsAnswe = loveCatsAnswe();
+
+userAnswar();
+
+
+
+
